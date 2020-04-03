@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+:root {
+  --lightBlue: rgb(255, 255, 255);
+  --lightGreen: #979797	;
+  --brown: #7e7e7e;
+  --darkGreen: #5c5c5c	;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  margin-top: 3rem;
+  text-align: center;
+  background: var(--lightBlue);
+}
+
+.main-search {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 0.2rem solid var(--brown);
+  border-left: 0.2rem solid var(--brown);
+  font-size: 2.2rem;
+  margin: 1rem 0;
+  padding: 0.4rem 0;
+  color: var(--brown);
+  text-transform: capitalize;
+  outline: none;
+  border-radius:0.2rem ;
+}
+
+.main-btn {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+
+  font-size: 2rem;
+  font-weight: lighter;
+  border-radius: 0.5rem;
+  padding: .5rem .5rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--brown);
+  border: 0.1rem solid var(--brown);
+  transition: all 0.2s linear;
+  outline: none;
+}
+
+.main-btn:hover {
+  background: var(--brown);
+  color: var(--lightBlue);
+  cursor: pointer;
+  outline: none;
+}
+
+.wait-icon {
+  display: none;
+  margin: .5rem auto;
+  width: 80px;
+}
+
+.show{
+  display: block;
+
+}
+
+.search-item{
+    text-align: left;
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: var(--darkGreen);
+    border-radius: 0.5rem;
+}
+
+.search-item__title{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+    color: white;
+}
+
+.search-item__text{
+    margin: 0.5 0;
+    font-size: 1.5rem;
+    color: var(--lightBlue);
+    font-weight: lighter;
+    margin: .5rem 0; 
+}
+
+.search-item__link{
+text-decoration: none;
+color: var(--lightGreen);
+font-size: 1.2rem;
+transition: all .2s ease-in;
+}
+
+.search-item__link:hover{
+    color: var(--lightBlue);
+}
+
+/* @media screen and (min-width:992px){
+    .results{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+} */
